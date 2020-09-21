@@ -1,0 +1,60 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<?php 
+$user = 'root';
+$pass = '';
+$db = 'reg_free';
+
+
+$db = new mysqli('localhost' , $user , $pass , $db ) or die("unable to connect");
+
+?>
+<body>	
+			<form class="box" method= "post" action="login.html" method="post">
+				<fieldset>
+					<legend align="center">Register</legend>
+				<br>
+				Username:	
+				<input type="text" name="name" required="" placeholder="Userame"><br>
+				Email:
+				<input type="email" name="name" required="" placeholder="Email"><br>
+				<tr><td>Phone:
+				<input type="Number" name="name" required="" placeholder="Phone"><br>
+				Password:
+				<input id="one" type="password" name="name" required="" placeholder="Password"><br>
+				Confirm Password:
+				<input type="password" name="name" required="" placeholder="Confirm Password"><br>
+				Date Of Birth:
+				<input id="wer" type="date" name="DOB" required="" placeholder="dd/mm/yyyy"><br>
+				<input id="input1" type="submit" name="submit" style="color:white" target="_blank" value="Register">
+				<small style="float: right; font-family: monospace;">&copy; Copyright 2020 TechyStuff</small>
+				</fieldset>
+			</form>
+		</table>
+	</div>
+					
+</body>
+</html>
+<!-- <table>		
+			<form class="box" method= "post" action="login.html">
+
+				<tr><td>Username:	
+				<input type="text" name="name" required="" placeholder="Userame"></td></tr><br>
+				<tr><td>Email:
+				<input type="email" name="name" required="" placeholder="Email"></td></tr><br>
+				<tr><td>Phone:
+				<input type="Number" name="name" required="" placeholder="Phone"></td></tr><br>
+				<tr><td>Password:
+				<input id="one" type="password" name="name" required="" placeholder="Password"></td></tr><br>
+				<tr><td>Confirm Password:
+				<input type="password" name="name" required="" placeholder="Confirm Password"></td></tr><br>
+				<tr><td><input id="input1" type="submit" name="submit" style="color:white" target="_blank" value="Register">
+			</form>
+		</table> -->
